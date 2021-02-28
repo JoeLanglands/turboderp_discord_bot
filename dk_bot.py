@@ -29,6 +29,7 @@ async def roll(ctx, low=0, high=100):
         await ctx.send('Invalid arguments try again!')
 
 @bot.command(
+    brief="Annoy everone with text-to-speech.",
     help="Annoy the shit out of everyone by sending a message as text-to-speech. (Cooldown 30 seconds)"
 )
 @commands.cooldown(1, 30, commands.BucketType.user)
