@@ -41,7 +41,7 @@ async def tts(ctx, *args):
     hidden=True
 )
 async def dk(ctx):
-    await ctx.send('Do you know what DK stands for?')
+    await ctx.send('Do you know what DK stands for?', tts=True)
 
 @bot.command(
     hidden=True
