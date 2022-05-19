@@ -50,3 +50,13 @@ async def dk(ctx):
 async def flame(ctx, member : discord.Member):
     await ctx.send(f"{member.name} you're like the Justin Timberlake of Japan, right?", tts=True)
 
+@bot.command(
+    hidden=True
+)
+async def fan(ctx, arg):
+    pasta = f"If {arg} has a million fans, then I am one of them. "\
+    f"If {arg} has ten fans, then I am one of them. If {arg} has one fan, then that is me. "\
+    f"If {arg} has no fans, then I am no longer on Earth. If the world is against {arg}, then "\
+    f"I am against the world."
+    await ctx.send(pasta, tts=True)
+
